@@ -3,20 +3,22 @@
     "version": "1.0.0",
     "description": "Learning Nodejs",
     "main": "app.js",
-
     "scripts": {
         "start": "nodemon server.js",
         "start:prod": "NODE_ENV=production nodemon server.js",
-        "debug" : "ndb server.js"
+        "debug": "ndb server.js"
     },
     "author": "Le Hoang Nhan",
     "license": "ISC",
     "dependencies": {
+        "bcryptjs": "^2.4.3",
         "dotenv": "^16.0.0",
         "express": "^4.17.2",
+        "jsonwebtoken": "^8.5.1",
         "mongoose": "^5.13.14",
         "morgan": "^1.10.0",
         "slugify": "^1.6.5",
+        "util": "^0.12.4",
         "validator": "^13.7.0"
     },
     "devDependencies": {
@@ -29,5 +31,8 @@
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-react": "^7.28.0",
         "prettier": "^2.5.1"
+    },
+    "engines": {
+        "node": ">=10.6.0"
     }
 }
